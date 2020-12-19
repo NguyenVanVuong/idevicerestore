@@ -58,6 +58,7 @@ int recovery_get_ecid(struct idevicerestore_client_t* client, uint64_t* ecid);
 int recovery_is_image4_supported(struct idevicerestore_client_t* client);
 int recovery_get_ap_nonce(struct idevicerestore_client_t* client, unsigned char** nonce, int* nonce_size);
 int recovery_get_sep_nonce(struct idevicerestore_client_t* client, unsigned char** nonce, int* nonce_size);
+	int recovery_send_restoreSep(struct idevicerestore_client_t* client, plist_t build_identity);
 
 
 #ifdef __cplusplus
